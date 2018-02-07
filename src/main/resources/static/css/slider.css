@@ -1,0 +1,85 @@
+li{
+    list-style-type: none;
+}
+
+.horizontal{
+    float: right;
+    width: 35px;
+    margin-left: 1%;
+}
+.horizontal.expand{
+    width: 230px;
+    height: 35px;
+    overflow: hidden;
+
+    transition: width 0.3s;
+    /* Firefox 4 */
+    -moz-transition: width 0.3s;
+    /* Safari 和 Chrome */
+    -webkit-transition: width 0.3s;
+    /* Opera */
+    -o-transition: width 0.3s;
+}
+.horizontal .mark{
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-right: 1%;
+    display: inline-block;
+    background-size: 100% 100%;
+    background-color: rgba(10,93,125,1);
+    border-radius: 100%;
+}
+.horizontal .mark:hover{
+    cursor: pointer;
+}
+.horizontal .content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 35px;
+    overflow: hidden;
+}
+.horizontal .content li{
+    width: 60px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #1cacd2;
+    border-right: 2px solid #00d2ff;
+    float: left;
+}
+
+.vUL{
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 42px;
+}
+.longitudinal .mark{
+    width: 42px;
+    height: 67px;
+    background: url("../image/rightTab_off.png") no-repeat 100% 100%;
+}
+.longitudinal .mark:hover{
+    cursor: pointer;
+    background: url("../image/rightTab_on.png") no-repeat 100% 100%;
+}
+.longitudinal .content{
+    width: 42px;
+    height: 0;
+    position: relative;
+    top: -10px;
+    display: block;
+    background: url("../image/contentBack.png") no-repeat 100% 100%;
+}
+.longitudinal:hover .content{
+    height: 137px;
+
+    transition: height 0.3s;
+    /* Firefox 4 */
+    -moz-transition: height 0.3s;
+    /* Safari 和 Chrome */
+    -webkit-transition: height 0.3s;
+    /* Opera */
+    -o-transition: height 0.3s;
+}
